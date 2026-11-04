@@ -1,0 +1,14 @@
+{
+  "name": "hephaestus-hearth",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --format=esm --outfile=hearth.js --minify",
+    "dev": "esbuild src/main.js --bundle --format=esm --outfile=hearth.js --servedir=. --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "three": "0.164.1"
+  }
+}
