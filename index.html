@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>Hephaestus Hearth</title>
+  <meta name="description" content="Hephaestus Hearth is the renovations desk for the house. The 3D model is placeholder massing. Floor plans come later.">
+  <meta name="theme-color" content="#05060a">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Hearth">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&amp;display=swap">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip" href="#desk">Skip to desk</a>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#house">
+      <span class="sq" aria-hidden="true"></span>
+      <span>Hephaestus Hearth</span>
+    </a>
+    <nav class="topnav" aria-label="Desk">
+      <a href="#house" aria-current="true">House</a>
+      <a href="#projects">Projects</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#notes">Notes</a>
+      <a href="https://jpavia10.github.io/prometheus-hub/" target="_blank" rel="noopener noreferrer">Hub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="house" class="panel hero">
+      <div class="hero-mark">
+        <span class="sq big" aria-hidden="true"></span>
+        <h1>HEPHAESTUS <span class="hearth">hearth</span></h1>
+      </div>
+
+      <div class="stage" id="house-stage" tabindex="0" aria-describedby="massing-note">
+        <canvas id="house-canvas" aria-label="Interactive placeholder model of a simple modern house. Not a measured drawing. Drag to orbit, scroll or pinch to zoom, right-drag or two fingers to pan. Arrow keys orbit when the view is focused. Plus and minus zoom. Zero resets."></canvas>
+        <div class="stage-chrome">
+          <p class="badge">Stand-in geometry</p>
+          <button type="button" id="reset-view">Reset view</button>
+        </div>
+        <p class="stage-hint">Drag to orbit · Pinch or scroll to zoom</p>
+        <p class="stage-fallback" hidden>This browser can’t show the 3D view. The desk below still works. The house was going to be placeholder boxes, not a measured model.</p>
+      </div>
+
+      <div class="hero-copy">
+        <p id="massing-note">Joseph's renovations desk. Placeholder geometry, not a measured drawing. Boxes and a roof stand in for the house. Real floor plans, photogrammetry, and a detailed model come later.</p>
+        <a class="quiet" href="https://jpavia10.github.io/prometheus-hub/" target="_blank" rel="noopener noreferrer">Back to Prometheus Hub</a>
+      </div>
+    </section>
+
+    <section class="desk" id="desk" aria-label="Renovations desk">
+      <div class="desk-intro">
+        <p class="kicker">Desk</p>
+        <p>Projects, rooms, and notes. All empty until the house has a real plan.</p>
+      </div>
+
+      <article id="projects" class="card">
+        <p class="kicker">Projects</p>
+        <h2>Open slots</h2>
+        <p>No projects yet. These slots stay empty until a renovation is real. No budgets or vendors are kept here.</p>
+        <ul class="slots">
+          <li>
+            <span>Empty slot</span>
+            <span class="slot-state">Waiting</span>
+          </li>
+          <li>
+            <span>Empty slot</span>
+            <span class="slot-state">Waiting</span>
+          </li>
+          <li>
+            <span>Empty slot</span>
+            <span class="slot-state">Waiting</span>
+          </li>
+        </ul>
+      </article>
+
+      <article id="rooms" class="card">
+        <p class="kicker">Rooms</p>
+        <h2>Room list</h2>
+        <p>No rooms yet. A floor plan will name them. This shell does not guess.</p>
+        <ul class="slots">
+          <li>
+            <span>No rooms listed</span>
+            <span class="slot-state">Empty</span>
+          </li>
+        </ul>
+      </article>
+
+      <article id="notes" class="card">
+        <p class="kicker">Notes</p>
+        <h2>Notes</h2>
+        <p>A place to write later. This shell does not save anything.</p>
+        <div class="note-stub">
+          <p>Notes stay empty until a later version keeps them.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <nav class="dock" aria-label="Desk links">
+    <div class="dock-links">
+      <a href="#projects">Projects</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="#rooms">Rooms</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a href="#notes">Notes</a>
+    </div>
+    <a class="dock-cta" href="https://jpavia10.github.io/prometheus-hub/" target="_blank" rel="noopener noreferrer">Open Hub <span aria-hidden="true">→</span></a>
+  </nav>
+
+  <noscript>
+    <section class="fallback">
+      <h2>Hephaestus Hearth</h2>
+      <p>The renovations desk needs JavaScript for the 3D house. Nothing on this page is a budget, a vendor list, or a floor plan.</p>
+      <p><a href="https://jpavia10.github.io/prometheus-hub/">Back to Prometheus Hub</a></p>
+    </section>
+  </noscript>
+
+  <script type="module" src="./hearth.js"></script>
+</body>
+</html>
