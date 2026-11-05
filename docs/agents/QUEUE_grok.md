@@ -2,7 +2,7 @@
 
 # Hephaestus Hearth · homework for Grok
 
-Updated 2026-11-05 02:26 UTC · 1 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Grok/HOMEWORK — Grok (every pillar)'.
+Updated 2026-11-05 02:32 UTC · 1 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Grok/HOMEWORK — Grok (every pillar)'.
 
 ## 1. HEA-GRK-01 · Second reader on Gemini's scan-app table
 
@@ -18,7 +18,9 @@ Updated 2026-11-05 02:26 UTC · 1 open · Rules for every pillar: https://github
 2. Write one line per cell you checked: row, column, Gemini's value, yours, the URL, agree/differ.
 
 **Make:** `hearth_grok_scan-apps-check_{YYYYMMDD-HHMM}.md`
+
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
 **Shape:** `table: app | column | gemini | grok | url | agree/differ`
 
 **How many:** 32

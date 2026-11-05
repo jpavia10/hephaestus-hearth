@@ -2,7 +2,7 @@
 
 # Hephaestus Hearth · homework for Gemini
 
-Updated 2026-11-05 02:26 UTC · 2 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Gemini/HOMEWORK — Gemini (every pillar)'.
+Updated 2026-11-05 02:32 UTC · 2 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Gemini/HOMEWORK — Gemini (every pillar)'.
 
 ## 1. HEA-GEM-01 · Scan the house with a phone: 8 apps compared on 10 fixed columns
 
@@ -19,7 +19,9 @@ Updated 2026-11-05 02:26 UTC · 2 open · Rules for every pillar: https://github
 3. Every cell from the maker's own page, with the URL in the last column.
 
 **Make:** `hearth_gemini_scan-apps_{YYYYMMDD-HHMM}.md`
+
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
 **Shape:** `one markdown table, 8 rows x 10 columns`
 
 **How many:** 8
@@ -50,7 +52,9 @@ Updated 2026-11-05 02:26 UTC · 2 open · Rules for every pillar: https://github
 2. Write 3 made-up projects (a bathroom, a deck, a paint job) as one JSON file that passes the schema.
 
 **Make:** `hearth_gemini_schema_{YYYYMMDD-HHMM}.json`
+
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
 **Shape:** `{"schema": {...}, "examples": [...3 projects]}`
 
 **How many:** 3
