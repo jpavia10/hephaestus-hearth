@@ -1,0 +1,138 @@
+{
+ "about": "Homework for this pillar, one list per AI (Claude writes it; tools/kit/render.py in jpavia10/prometheus-hub turns it into docs/agents/QUEUE_{ai}.md and the Drive docs). Every task says exactly what to read, what to make, how many, where to save it, how Claude checks it and what makes it not done. A task is done only when the file passes the checks, never because it was sent.",
+ "updated": "2026-11-05",
+ "pillar": "hearth",
+ "agents": [
+  {
+   "id": "gemini",
+   "name": "Gemini",
+   "tasks": [
+    {
+     "id": "HEA-GEM-01",
+     "title": "Scan the house with a phone: 8 apps compared on 10 fixed columns",
+     "state": "now",
+     "due": "2026-11-11",
+     "why": "The house on the stand is placeholder boxes. The real model will come from Joseph scanning rooms with his phone.",
+     "inputs": [
+      "each app's own site, App Store / Play listing and help pages"
+     ],
+     "steps": [
+      "Compare exactly these 8: Polycam, Scaniverse, Magicplan, RoomScan Pro, Canvas (Occipital), Matterport (phone capture), Metascan, KIRI Engine.",
+      "Columns, exactly: app | iPhone LiDAR needed (yes/no/optional) | Android | room floor plan with measurements (yes/no) | export formats (list) | GLB or USDZ export on the free plan | price per month (USD) | accuracy the maker states (with its words) | max area per scan | source URLs.",
+      "Every cell from the maker's own page, with the URL in the last column."
+     ],
+     "deliver": {
+      "file": "hearth_gemini_scan-apps_{YYYYMMDD-HHMM}.md",
+      "folder": "Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/",
+      "shape": "one markdown table, 8 rows x 10 columns"
+     },
+     "count": 8,
+     "done_when": "8 rows, 80 filled cells, every price and format on the cited page.",
+     "checks": [
+      "Claude opens the source URL of every price and export cell for 4 apps at random."
+     ],
+     "rejected_if": [
+      "a row copied from another row with the names changed",
+      "a source URL that does not open or does not say what the row claims",
+      "fewer items than the count",
+      "a file saved anywhere but the folder named here, or under another name",
+      "a blank cell without 'not stated' and the page you checked"
+     ]
+    },
+    {
+     "id": "HEA-GEM-02",
+     "title": "The renovation data shape: JSON Schema + 3 made-up projects that pass it",
+     "state": "now",
+     "due": "2026-11-12",
+     "why": "Projects, rooms and notes are empty on purpose. They need one shape before anything is saved.",
+     "inputs": [
+      "https://raw.githubusercontent.com/jpavia10/hephaestus-hearth/main/README.md"
+     ],
+     "steps": [
+      "Write a JSON Schema (draft 2020-12) with: house, room (name, floor, size in feet and inches, photos), project (room, title, state: idea / quoted / booked / doing / done, budget, start, finish), task, cost_line (what, vendor, quote, paid, date, receipt photo), vendor (name, trade, phone optional), photo (file, room, date, before/after).",
+      "Write 3 made-up projects (a bathroom, a deck, a paint job) as one JSON file that passes the schema."
+     ],
+     "deliver": {
+      "file": "hearth_gemini_schema_{YYYYMMDD-HHMM}.json",
+      "folder": "Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/",
+      "shape": "{\"schema\": {...}, \"examples\": [...3 projects]}"
+     },
+     "count": 3,
+     "done_when": "The schema is valid draft 2020-12 and all 3 examples pass it.",
+     "checks": [
+      "Claude validates with python jsonschema."
+     ],
+     "rejected_if": [
+      "an example that fails its own schema",
+      "a real address, name or phone number"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "grok",
+   "name": "Grok",
+   "tasks": [
+    {
+     "id": "HEA-GRK-01",
+     "title": "Second reader on Gemini's scan-app table",
+     "state": "next",
+     "due": "2026-11-13",
+     "why": "Prices and export rules change often; a second reader catches what one missed.",
+     "inputs": [
+      "Gemini's file hearth_gemini_scan-apps_*.md in the incoming folder (once it is there)"
+     ],
+     "steps": [
+      "Check every price, export and LiDAR cell against the cited page.",
+      "Write one line per cell you checked: row, column, Gemini's value, yours, the URL, agree/differ."
+     ],
+     "deliver": {
+      "file": "hearth_grok_scan-apps-check_{YYYYMMDD-HHMM}.md",
+      "folder": "Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/",
+      "shape": "table: app | column | gemini | grok | url | agree/differ"
+     },
+     "count": 32,
+     "done_when": "At least 32 cells checked (4 per app).",
+     "checks": [
+      "Claude spot-checks 5 of your 'differ' lines."
+     ],
+     "rejected_if": [
+      "a row copied from another row with the names changed",
+      "a source URL that does not open or does not say what the row claims",
+      "fewer items than the count",
+      "a file saved anywhere but the folder named here, or under another name"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "claude",
+   "name": "Claude",
+   "tasks": [
+    {
+     "id": "HEA-CLA-01",
+     "title": "Turn on Pages for the Hearth and save projects on the device",
+     "state": "now",
+     "due": "2026-11-12",
+     "why": "The README says Pages was never enabled; the desk links to a page that may not load.",
+     "inputs": [],
+     "steps": [
+      "confirm the Pages state",
+      "store projects in the HEA-GEM-02 shape in IndexedDB"
+     ],
+     "deliver": {
+      "file": "the app",
+      "folder": "jpavia10/hephaestus-hearth main",
+      "shape": "live page"
+     },
+     "count": 1,
+     "done_when": "The Hearth loads at its address and a project survives a reload.",
+     "checks": [
+      "phone screenshot"
+     ],
+     "rejected_if": []
+    }
+   ]
+  }
+ ]
+}
