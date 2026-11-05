@@ -2,7 +2,7 @@
 
 # Hephaestus Hearth · homework for Gemini
 
-Updated 2026-11-05 14:55 UTC · 6 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Gemini/HOMEWORK — Gemini (every pillar)'.
+Updated 2026-11-05 15:02 UTC · 7 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Gemini/HOMEWORK — Gemini (every pillar)'.
 
 ## 1. HEA-GEM-01 · Scan the house with a phone: 8 apps compared on 10 fixed columns
 
@@ -38,58 +38,98 @@ Updated 2026-11-05 14:55 UTC · 6 open · Rules for every pillar: https://github
 - a file saved anywhere but the folder named here, or under another name
 - a blank cell without 'not stated' and the page you checked
 
-## 2. HEA-GEM-02 · The renovation data shape: JSON Schema + 3 made-up projects that pass it
+## 2. HEA-GEM-02 · The Hearth data shape: rooms with measured walls, the assets in each room, renovation projects (JSON Schema + 3 examples)
 
 **Due:** 2026-11-12 · **State:** now
 
-**Why:** Projects, rooms and notes are empty on purpose. They need one shape before anything is saved.
+**Why:** Rooms, assets and projects are empty on purpose. They need one shape before anything is saved. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.
 
 **Read first:**
-- https://raw.githubusercontent.com/jpavia10/hephaestus-hearth/main/README.md
+- https://jpavia10.github.io/hephaestus-hearth/ (the desk today: the stand-in house, the room list, three project slots)
 
 **Do this:**
-1. Write a JSON Schema (draft 2020-12) with: house, room (name, floor, size in feet and inches, photos), project (room, title, state: idea / quoted / booked / doing / done, budget, start, finish), task, cost_line (what, vendor, quote, paid, date, receipt photo), vendor (name, trade, phone optional), photo (file, room, date, before/after).
-2. Write 3 made-up projects (a bathroom, a deck, a paint job) as one JSON file that passes the schema.
+1. Write one JSON Schema (draft 2020-12) with these records: house (name, floors, origin note); room (id, name, floor, outline = a list of corner points [x, y] in inches, clockwise, from one fixed origin per floor; ceiling height in inches; openings = doors and windows, each with the wall it sits on (index of the outline edge), offset from that wall's first corner, width, height, sill height); asset (id, name, category, room id, position {x, y, z} in inches + rotation in degrees, brand, model, serial, purchase date, price, receipt photo, warranty end, photos, condition, notes); project (id, room ids, title, state: idea / quoted / booked / doing / done, budget, start, finish, tasks, cost lines with vendor / quote / paid / date / receipt photo, before and after photos, asset ids added and asset ids removed); photo (file, room id, date, kind: room / asset / receipt / before / after).
+2. Every length in inches (decimals allowed), every date YYYY-MM-DD, every id a short string; required fields marked.
+3. Write 3 made-up examples in one JSON file that pass the schema: (1) a bedroom drawn with 4 corners, 1 door and 2 windows, holding 8 assets; (2) an L-shaped kitchen with 6 corners and a renovation that removes 2 assets and adds 3; (3) a bathroom remodel in state 'doing' with 4 cost lines.
+4. Say the area of each example room in square feet (Claude recomputes it from the corners).
 
 **Make:** `hearth_gemini_schema_{YYYYMMDD-HHMM}.json`
 
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
 
-**Shape:** `{"schema": {...}, "examples": [...3 projects]}`
+**Shape:** `{"schema": {...}, "examples": {"rooms": [...], "assets": [...], "projects": [...]}, "areas_sqft": {"room id": 132.5}}`
 
 **How many:** 3
 
-**Done when:** The schema is valid draft 2020-12 and all 3 examples pass it.
+**Done when:** The schema is valid draft 2020-12, all 3 examples pass it, every stated area matches the corners, every asset sits inside its room's outline.
 
 **How Claude checks it:**
 - Claude validates with python jsonschema.
+- Claude computes each room's area from its corners (shoelace) and compares within 0.5 sq ft.
+- Claude checks every asset position is inside its room's outline and every opening fits on its wall.
 
 **Not done (sent back) if:**
 - an example that fails its own schema
-- a real address, name or phone number
+- a room outline that crosses itself or is not closed
+- an opening wider than its wall
+- a real address, name, serial number or phone number
 
-## 3. HEA-GEM-03 · 60 renovation unit costs, each with two retailer product pages
+## 3. HEA-GEM-07 · Home inventory: 120 asset categories, room by room, with the fields insurers ask for
+
+**Due:** 2026-11-13 · **State:** now
+
+**Why:** Hearth lists what is in each room; the categories and the fields worth recording should come from a published home-inventory checklist, not guesses. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.
+
+**Do this:**
+1. Use published home-inventory checklists: the Insurance Information Institute (iii.org), the NAIC (content.naic.org), FEMA / Ready.gov, or a major insurer's own checklist page.
+2. List 120 asset categories across kitchen, bathrooms, bedrooms, living areas, office, laundry, garage, basement, outdoor and the house systems (water heater, furnace, AC, electrical panel, sump pump).
+3. For each: category, the rooms it is usually in, the fields worth recording (from: brand, model, serial, purchase date, price, receipt, photo, warranty end, size), and the source page with a quote.
+
+**Make:** `hearth_gemini_inventory_categories_{YYYYMMDD-HHMM}.json`
+
+**Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
+**Shape:** `[{"n":1,"category":"refrigerator","rooms":["kitchen","garage"],"fields":["brand","model","serial","purchase date","price","receipt","photo","warranty end"],"url":"https://www.iii.org/...","quote":"..."}]`
+
+**How many:** 120
+
+**Done when:** 120 categories, every one traced to a checklist page.
+
+**How Claude checks it:**
+- Claude opens 10 source pages at random.
+- Duplicates (fridge / refrigerator) count once.
+
+**Not done (sent back) if:**
+- fewer rows than the count, or a row missing a field of the shape
+- a row copied from another row with the names changed
+- a URL that does not open, is a front page or a search page, or does not say what the row claims
+- a quote that is not on the page it cites (Claude opens 10 rows at random)
+- a file saved anywhere but the folder named here, or under another name
+- a category list from a blog instead of a checklist page
+
+## 4. HEA-GEM-08 · How accurate a phone floor plan really is: 12 published measurements
 
 **Due:** 2026-11-14 · **State:** now
 
-**Why:** Hearth will price projects. It needs real unit prices, not ranges from articles.
+**Why:** The layout must become accurate. Claude needs numbers on how close phone scans, phone AR and laser measures get to a tape measure. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.
 
 **Do this:**
-1. Pick 60 common line items (drywall sheet 4x8 1/2 in, joint compound 4.5 gal, interior paint 1 gal, primer, LVP per sq ft, ceramic tile per sq ft, thinset, grout, 2x4x8 stud, plywood 3/4, insulation batt R-13, outlet, GFCI outlet, light switch, LED recessed light, toilet, vanity 30 in, faucet, PEX 1/2 in 100 ft, shut-off valve, exterior door, interior door slab, door hinge, baseboard per ft, caulk, construction adhesive, deck screws 5 lb, concrete 80 lb bag, mulch 2 cu ft, smoke alarm ... up to 60).
-2. For each: one Home Depot and one Lowe's product page (homedepot.com/p/... and lowes.com/pd/...), the model or SKU, the price shown, the unit, and the date you saw it.
+1. Find 12 published tests (a paper with a DOI, a university or government test report, or a manufacturer's published validation) that measured floor-plan or room-dimension error.
+2. Cover at least: iPhone LiDAR / RoomPlan, Android ARCore depth, a handheld laser distance meter, and a tape measure baseline.
+3. For each: method and device, number of rooms or walls measured, the error as reported (mean and max, in cm or %), the room sizes, the DOI or URL and the quote with the numbers.
 
-**Make:** `hearth_gemini_unitcosts_{YYYYMMDD-HHMM}.json`
+**Make:** `hearth_gemini_accuracy_{YYYYMMDD-HHMM}.json`
 
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
 
-**Shape:** `[{"n":1,"item":"drywall 4x8 ft 1/2 in","unit":"sheet","home_depot":{"url":"https://www.homedepot.com/p/...","sku":"...","price":15.98},"lowes":{"url":"https://www.lowes.com/pd/...","sku":"...","price":16.48},"seen":"2026-11-14"}]`
+**Shape:** `[{"n":1,"method":"iPhone 13 Pro LiDAR (RoomPlan)","walls":48,"mean_error_cm":2.1,"max_error_cm":6.5,"rooms":"3-5 m","doi":"10.xxxx/xxxxx","url":"https://...","quote":"..."}]`
 
-**How many:** 60
+**How many:** 12
 
-**Done when:** 60 items, 120 product pages.
+**Done when:** 12 tests, at least one per method named, every number quoted.
 
 **How Claude checks it:**
-- Claude opens 15 product pages at random (prices drift: within 20 % passes).
+- Claude resolves every DOI and finds each quote.
 
 **Not done (sent back) if:**
 - fewer rows than the count, or a row missing a field of the shape
@@ -97,30 +137,31 @@ Updated 2026-11-05 14:55 UTC · 6 open · Rules for every pillar: https://github
 - a URL that does not open, is a front page or a search page, or does not say what the row claims
 - a quote that is not on the page it cites (Claude opens 10 rows at random)
 - a file saved anywhere but the folder named here, or under another name
-- a price from an article or a cost guide instead of a product page
+- an error number with no quote
+- a vendor marketing page as the only source for a scan method
 
-## 4. HEA-GEM-04 · 30 IRC 2021 rules a homeowner renovating hits, with section numbers
+## 5. HEA-GEM-09 · 10 floor-plan and 3D formats Hearth could import: what each one carries
 
 **Due:** 2026-11-15 · **State:** now
 
-**Why:** Hearth's project checklist should warn before a rule is broken (stairs, egress, GFCI, smoke alarms).
+**Why:** When a room is scanned or drawn, Hearth must read the file into its 3D view without losing walls, doors and real units. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.
 
 **Do this:**
-1. From the International Residential Code 2021 on codes.iccsafe.org/content/IRC2021P2 (free read view), pick 30 rules: stair rise/run/headroom, handrail height, guard height, egress window size and sill, smoke and CO alarm placement, GFCI and AFCI locations, bathroom ventilation, ceiling height, deck ledger, water heater relief valve, etc.
-2. For each: section number (e.g. R311.7.5.1), the rule in one sentence, every number in it with its unit, the URL and the quote.
+1. Formats: Apple RoomPlan (USDZ + its JSON), glTF / GLB, OBJ, USDZ, IFC, DXF, SVG, E57 point cloud, PLY, and the Magicplan export the app offers.
+2. For each: the specification page URL, the length unit it stores (or 'none'), and yes / no / partial for: walls, doors, windows, room names, floor levels, dimensions; and the three.js loader that reads it, named exactly as on threejs.org/docs (or 'none').
 
-**Make:** `hearth_gemini_irc_{YYYYMMDD-HHMM}.json`
+**Make:** `hearth_gemini_formats_{YYYYMMDD-HHMM}.json`
 
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
 
-**Shape:** `[{"n":1,"section":"R311.7.5.1","topic":"stair riser height","rule":"riser height not more than 7 3/4 in","numbers":[{"value":7.75,"unit":"in","max":true}],"url":"https://codes.iccsafe.org/content/IRC2021P2/...","quote":"..."}]`
+**Shape:** `[{"n":1,"format":"IFC","spec_url":"https://...","units":"set in the file (IfcUnitAssignment)","walls":"yes","doors":"yes","windows":"yes","room_names":"yes","floors":"yes","dimensions":"yes","threejs_loader":"none","quote":"..."}]`
 
-**How many:** 30
+**How many:** 10
 
-**Done when:** 30 sections, every number quoted.
+**Done when:** 10 formats, every cell traced to the spec or the three.js docs.
 
 **How Claude checks it:**
-- Claude opens 10 sections at random.
+- Claude opens every spec page and checks each loader name on threejs.org/docs.
 
 **Not done (sent back) if:**
 - fewer rows than the count, or a row missing a field of the shape
@@ -128,31 +169,30 @@ Updated 2026-11-05 14:55 UTC · 6 open · Rules for every pillar: https://github
 - a URL that does not open, is a front page or a search page, or does not say what the row claims
 - a quote that is not on the page it cites (Claude opens 10 rows at random)
 - a file saved anywhere but the folder named here, or under another name
-- a rule from a blog instead of the code text
-- a section number that does not exist in IRC 2021
+- a loader name that is not in the three.js docs or examples
 
-## 5. HEA-GEM-05 · 50 recurring home maintenance tasks with intervals from an authoritative source
+## 6. HEA-GEM-10 · Laser measures that send readings to an Android phone: 10 models compared
 
 **Due:** 2026-11-16 · **State:** now
 
-**Why:** Kairos and Hearth will put house upkeep on the calendar; each interval must come from a manufacturer, a university extension service, FEMA, EPA or the US Fire Administration.
+**Why:** Joseph's phone is Android (no LiDAR). A Bluetooth laser measure is the realistic path to an accurate plan; Claude needs the real specs. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.
 
 **Do this:**
-1. 50 tasks (HVAC filter, water heater flush, smoke alarm test and battery, dryer vent clean, gutter clean, sump pump test, GFCI test, caulk check, roof check, chimney sweep, garage door balance ...).
-2. For each: interval in days (or season), why, the source page and the quote with the interval.
+1. 10 Bluetooth laser distance meters (Bosch, Leica DISTO, Hilti, Stanley, DeWalt, Milwaukee, Makita and others).
+2. For each, from the maker's own product or spec page: accuracy (+/- mm), range (m), Bluetooth (yes / no), the Android app it pairs with and that app's Play Store URL, whether the app exports a floor plan (formats), price in USD from the maker or a named retailer, and the quote with the accuracy.
 
-**Make:** `hearth_gemini_upkeep_{YYYYMMDD-HHMM}.json`
+**Make:** `hearth_gemini_lasers_{YYYYMMDD-HHMM}.json`
 
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
 
-**Shape:** `[{"n":1,"task":"test smoke alarms","interval_days":30,"season":null,"why":"...","url":"https://www.usfa.fema.gov/...","quote":"Test smoke alarms at least once a month"}]`
+**Shape:** `[{"n":1,"model":"...","maker_url":"https://...","accuracy_mm":1.5,"range_m":50,"bluetooth":true,"android_app":"...","play_url":"https://play.google.com/store/apps/details?id=...","exports":["PDF","DXF"],"price_usd":129.0,"price_url":"https://...","quote":"..."}]`
 
-**How many:** 50
+**How many:** 10
 
-**Done when:** 50 tasks, every interval quoted.
+**Done when:** 10 models, every accuracy and app from the maker's own pages.
 
 **How Claude checks it:**
-- Claude opens 10 at random.
+- Claude opens every maker page and every Play Store link.
 
 **Not done (sent back) if:**
 - fewer rows than the count, or a row missing a field of the shape
@@ -160,30 +200,33 @@ Updated 2026-11-05 14:55 UTC · 6 open · Rules for every pillar: https://github
 - a URL that does not open, is a front page or a search page, or does not say what the row claims
 - a quote that is not on the page it cites (Claude opens 10 rows at random)
 - a file saved anywhere but the folder named here, or under another name
-- an interval from a home-improvement blog
+- a spec from a review site instead of the maker's page
+- an app that is iPhone-only listed as Android
 
-## 6. HEA-GEM-06 · 15 material quantity formulas with 3 worked examples each
+## 7. HEA-GEM-11 · 10 home inventory and renovation apps taken apart: 50 features Hearth should have
 
 **Due:** 2026-11-17 · **State:** now
 
-**Why:** Hearth will turn a room's size into a shopping list.
+**Why:** Hearth should beat the apps people already use for 'what is in my house' and 'what did I do to it'. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.
 
 **Do this:**
-1. 15 formulas: paint gallons (walls + ceiling, two coats, coverage per gallon), primer, drywall sheets, joint compound, tile with waste, grout, thinset, LVP with waste, baseboard length, insulation batts, concrete bags for a slab, mulch bags, deck boards, screws per sq ft of deck, wallpaper rolls.
-2. Each: the formula with every constant named and its source (a manufacturer's coverage page or spec sheet), then 3 worked examples with real room sizes and the answer rounded up as a store sells it.
+1. Apps: HomeZada, Centriq, Encircle, Sortly, Nest Egg, Under My Roof, magicplan, Houzz, BluePlan or Homer, and one more of your choice that tracks assets per room.
+2. For each, 5 specific things on its screens about: assets per room, receipts and warranties, renovation projects with before/after, or the floor plan (example: 'tap a wall on the plan to see the paint colour and the date it was painted').
+3. Each row: app, screen, what it does, a URL where it can be seen (help article, store listing, screenshot page), and how Hearth could do it better.
 
-**Make:** `hearth_gemini_quantities_{YYYYMMDD-HHMM}.json`
+**Make:** `hearth_gemini_app-teardown_{YYYYMMDD-HHMM}.json`
 
 **Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
 
-**Shape:** `[{"n":1,"material":"interior paint","formula":"ceil((wall_area_sqft - openings_sqft) * coats / coverage_sqft_per_gal)","constants":{"coverage_sqft_per_gal":350},"url":"https://...","quote":"...","examples":[{"inputs":{"wall_area_sqft":420,"openings_sqft":40,"coats":2},"answer":3,"unit":"gal"}]}]`
+**Shape:** `[{"n":1,"app":"HomeZada","screen":"...","does":"...","url":"https://...","hearth":"..."}]`
 
-**How many:** 15
+**How many:** 50
 
-**Done when:** 15 formulas, 45 examples; Claude recomputes all 45.
+**Done when:** 50 rows, 5 per app, each about one of the three scope areas.
 
 **How Claude checks it:**
-- An example whose answer does not follow from its formula = the formula is sent back.
+- Claude opens 10 URLs at random.
+- A row about budgeting, shopping or maintenance reminders does not count (out of scope).
 
 **Not done (sent back) if:**
 - fewer rows than the count, or a row missing a field of the shape
@@ -191,4 +234,4 @@ Updated 2026-11-05 14:55 UTC · 6 open · Rules for every pillar: https://github
 - a URL that does not open, is a front page or a search page, or does not say what the row claims
 - a quote that is not on the page it cites (Claude opens 10 rows at random)
 - a file saved anywhere but the folder named here, or under another name
-- a constant with no source
+- two rows that say the same thing about one app

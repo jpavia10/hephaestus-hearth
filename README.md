@@ -1,6 +1,6 @@
 # Hephaestus Hearth
 
-Joseph's renovations desk. A wing of [Prometheus Hub](https://jpavia10.github.io/prometheus-hub/), in the same cool midnight: thin glass, pearl type, silver-blue dust. No Titan gold, and no vault, fleet, or ledger data.
+Joseph's house desk: renovation projects, the assets in every room (the inventory), and a floor plan that gets accurate over time. A wing of [Prometheus Hub](https://jpavia10.github.io/prometheus-hub/), in the same cool midnight: thin glass, pearl type, silver-blue dust. No Titan gold, and no vault, fleet, or ledger data.
 
 https://jpavia10.github.io/hephaestus-hearth/
 
