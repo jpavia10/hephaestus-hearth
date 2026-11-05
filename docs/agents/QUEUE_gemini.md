@@ -2,7 +2,7 @@
 
 # Hephaestus Hearth · homework for Gemini
 
-Updated 2026-11-05 02:32 UTC · 2 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Gemini/HOMEWORK — Gemini (every pillar)'.
+Updated 2026-11-05 14:55 UTC · 6 open · Rules for every pillar: https://github.com/jpavia10/prometheus-hub/blob/main/AI_START_HERE.md. Your homework in every pillar on one page: Drive doc 'Prometheus Hub/Gemini/HOMEWORK — Gemini (every pillar)'.
 
 ## 1. HEA-GEM-01 · Scan the house with a phone: 8 apps compared on 10 fixed columns
 
@@ -67,3 +67,128 @@ Updated 2026-11-05 02:32 UTC · 2 open · Rules for every pillar: https://github
 **Not done (sent back) if:**
 - an example that fails its own schema
 - a real address, name or phone number
+
+## 3. HEA-GEM-03 · 60 renovation unit costs, each with two retailer product pages
+
+**Due:** 2026-11-14 · **State:** now
+
+**Why:** Hearth will price projects. It needs real unit prices, not ranges from articles.
+
+**Do this:**
+1. Pick 60 common line items (drywall sheet 4x8 1/2 in, joint compound 4.5 gal, interior paint 1 gal, primer, LVP per sq ft, ceramic tile per sq ft, thinset, grout, 2x4x8 stud, plywood 3/4, insulation batt R-13, outlet, GFCI outlet, light switch, LED recessed light, toilet, vanity 30 in, faucet, PEX 1/2 in 100 ft, shut-off valve, exterior door, interior door slab, door hinge, baseboard per ft, caulk, construction adhesive, deck screws 5 lb, concrete 80 lb bag, mulch 2 cu ft, smoke alarm ... up to 60).
+2. For each: one Home Depot and one Lowe's product page (homedepot.com/p/... and lowes.com/pd/...), the model or SKU, the price shown, the unit, and the date you saw it.
+
+**Make:** `hearth_gemini_unitcosts_{YYYYMMDD-HHMM}.json`
+
+**Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
+**Shape:** `[{"n":1,"item":"drywall 4x8 ft 1/2 in","unit":"sheet","home_depot":{"url":"https://www.homedepot.com/p/...","sku":"...","price":15.98},"lowes":{"url":"https://www.lowes.com/pd/...","sku":"...","price":16.48},"seen":"2026-11-14"}]`
+
+**How many:** 60
+
+**Done when:** 60 items, 120 product pages.
+
+**How Claude checks it:**
+- Claude opens 15 product pages at random (prices drift: within 20 % passes).
+
+**Not done (sent back) if:**
+- fewer rows than the count, or a row missing a field of the shape
+- a row copied from another row with the names changed
+- a URL that does not open, is a front page or a search page, or does not say what the row claims
+- a quote that is not on the page it cites (Claude opens 10 rows at random)
+- a file saved anywhere but the folder named here, or under another name
+- a price from an article or a cost guide instead of a product page
+
+## 4. HEA-GEM-04 · 30 IRC 2021 rules a homeowner renovating hits, with section numbers
+
+**Due:** 2026-11-15 · **State:** now
+
+**Why:** Hearth's project checklist should warn before a rule is broken (stairs, egress, GFCI, smoke alarms).
+
+**Do this:**
+1. From the International Residential Code 2021 on codes.iccsafe.org/content/IRC2021P2 (free read view), pick 30 rules: stair rise/run/headroom, handrail height, guard height, egress window size and sill, smoke and CO alarm placement, GFCI and AFCI locations, bathroom ventilation, ceiling height, deck ledger, water heater relief valve, etc.
+2. For each: section number (e.g. R311.7.5.1), the rule in one sentence, every number in it with its unit, the URL and the quote.
+
+**Make:** `hearth_gemini_irc_{YYYYMMDD-HHMM}.json`
+
+**Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
+**Shape:** `[{"n":1,"section":"R311.7.5.1","topic":"stair riser height","rule":"riser height not more than 7 3/4 in","numbers":[{"value":7.75,"unit":"in","max":true}],"url":"https://codes.iccsafe.org/content/IRC2021P2/...","quote":"..."}]`
+
+**How many:** 30
+
+**Done when:** 30 sections, every number quoted.
+
+**How Claude checks it:**
+- Claude opens 10 sections at random.
+
+**Not done (sent back) if:**
+- fewer rows than the count, or a row missing a field of the shape
+- a row copied from another row with the names changed
+- a URL that does not open, is a front page or a search page, or does not say what the row claims
+- a quote that is not on the page it cites (Claude opens 10 rows at random)
+- a file saved anywhere but the folder named here, or under another name
+- a rule from a blog instead of the code text
+- a section number that does not exist in IRC 2021
+
+## 5. HEA-GEM-05 · 50 recurring home maintenance tasks with intervals from an authoritative source
+
+**Due:** 2026-11-16 · **State:** now
+
+**Why:** Kairos and Hearth will put house upkeep on the calendar; each interval must come from a manufacturer, a university extension service, FEMA, EPA or the US Fire Administration.
+
+**Do this:**
+1. 50 tasks (HVAC filter, water heater flush, smoke alarm test and battery, dryer vent clean, gutter clean, sump pump test, GFCI test, caulk check, roof check, chimney sweep, garage door balance ...).
+2. For each: interval in days (or season), why, the source page and the quote with the interval.
+
+**Make:** `hearth_gemini_upkeep_{YYYYMMDD-HHMM}.json`
+
+**Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
+**Shape:** `[{"n":1,"task":"test smoke alarms","interval_days":30,"season":null,"why":"...","url":"https://www.usfa.fema.gov/...","quote":"Test smoke alarms at least once a month"}]`
+
+**How many:** 50
+
+**Done when:** 50 tasks, every interval quoted.
+
+**How Claude checks it:**
+- Claude opens 10 at random.
+
+**Not done (sent back) if:**
+- fewer rows than the count, or a row missing a field of the shape
+- a row copied from another row with the names changed
+- a URL that does not open, is a front page or a search page, or does not say what the row claims
+- a quote that is not on the page it cites (Claude opens 10 rows at random)
+- a file saved anywhere but the folder named here, or under another name
+- an interval from a home-improvement blog
+
+## 6. HEA-GEM-06 · 15 material quantity formulas with 3 worked examples each
+
+**Due:** 2026-11-17 · **State:** now
+
+**Why:** Hearth will turn a room's size into a shopping list.
+
+**Do this:**
+1. 15 formulas: paint gallons (walls + ceiling, two coats, coverage per gallon), primer, drywall sheets, joint compound, tile with waste, grout, thinset, LVP with waste, baseboard length, insulation batts, concrete bags for a slab, mulch bags, deck boards, screws per sq ft of deck, wallpaper rolls.
+2. Each: the formula with every constant named and its source (a manufacturer's coverage page or spec sheet), then 3 worked examples with real room sizes and the answer rounded up as a store sells it.
+
+**Make:** `hearth_gemini_quantities_{YYYYMMDD-HHMM}.json`
+
+**Save in:** Prometheus Hub/Pillars/Hephaestus Hearth/incoming (AI drop files)/
+
+**Shape:** `[{"n":1,"material":"interior paint","formula":"ceil((wall_area_sqft - openings_sqft) * coats / coverage_sqft_per_gal)","constants":{"coverage_sqft_per_gal":350},"url":"https://...","quote":"...","examples":[{"inputs":{"wall_area_sqft":420,"openings_sqft":40,"coats":2},"answer":3,"unit":"gal"}]}]`
+
+**How many:** 15
+
+**Done when:** 15 formulas, 45 examples; Claude recomputes all 45.
+
+**How Claude checks it:**
+- An example whose answer does not follow from its formula = the formula is sent back.
+
+**Not done (sent back) if:**
+- fewer rows than the count, or a row missing a field of the shape
+- a row copied from another row with the names changed
+- a URL that does not open, is a front page or a search page, or does not say what the row claims
+- a quote that is not on the page it cites (Claude opens 10 rows at random)
+- a file saved anywhere but the folder named here, or under another name
+- a constant with no source
