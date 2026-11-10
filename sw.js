@@ -1,10 +1,11 @@
 /* Hephaestus Hearth. Network first. Same-origin shell only. No secrets. */
-var CACHE = "hephaestus-hearth-v1";
+var CACHE = "hephaestus-hearth-v2";
 var SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./hearth.js",
+  "./deck.js",
   "./manifest.webmanifest",
   "./icons/favicon.svg",
   "./icons/favicon-32.png",
@@ -22,7 +23,7 @@ self.addEventListener("install", function (event) {
 
 self.addEventListener("activate", function (event) {
   event.waitUntil(caches.keys().then(function (keys) {
-    return Promise.all(keys.filter(function (key) { return key !== CACHE; }).map(function (key) {
+    return Promise.all(keys.filter(function (key) { return key.indexOf("hephaestus-hearth-") === 0 && key !== CACHE; }).map(function (key) {
       return caches.delete(key);
     }));
   }).then(function () { return self.clients.claim(); }));

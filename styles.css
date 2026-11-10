@@ -509,3 +509,9 @@ main { position: relative; z-index: 2; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Deck project panel (Sebastian, 2026-11-10) */
+.dstage{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid rgba(159,180,204,.12)}
+.dstage-main{display:flex;gap:9px;align-items:flex-start;font-size:15px;line-height:1.45}
+.dstage-date{background:rgba(10,16,28,.5);border:1px solid rgba(159,180,204,.3);border-radius:8px;color:inherit;padding:4px 6px;font:inherit;font-size:13.5px}
+.dstage-progress{font-weight:600;margin:8px 0}
