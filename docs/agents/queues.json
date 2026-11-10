@@ -1,6 +1,6 @@
 {
  "about": "Homework for this pillar, one list per AI (Claude writes it; tools/kit/render.py in jpavia10/prometheus-hub turns it into docs/agents/QUEUE_{ai}.md and the Drive docs). Every task says exactly what to read, what to make, how many, where to save it, how Claude checks it and what makes it not done. A task is done only when the file passes the checks, never because it was sent.",
- "updated": "2026-11-05",
+ "updated": "2026-11-09",
  "pillar": "hearth",
  "agents": [
   {
@@ -10,7 +10,7 @@
     {
      "id": "HEA-GEM-01",
      "title": "Scan the house with a phone: 8 apps compared on 10 fixed columns",
-     "state": "now",
+     "state": "done",
      "due": "2026-11-11",
      "why": "The house on the stand is placeholder boxes. The real model will come from Joseph scanning rooms with his phone.",
      "inputs": [
@@ -42,7 +42,7 @@
     {
      "id": "HEA-GEM-02",
      "title": "The Hearth data shape: rooms with measured walls, the assets in each room, renovation projects (JSON Schema + 3 examples)",
-     "state": "now",
+     "state": "done",
      "due": "2026-11-12",
      "why": "Rooms, assets and projects are empty on purpose. They need one shape before anything is saved. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.",
      "inputs": [
@@ -76,7 +76,7 @@
     {
      "id": "HEA-GEM-07",
      "title": "Home inventory: 120 asset categories, room by room, with the fields insurers ask for",
-     "state": "now",
+     "state": "done",
      "due": "2026-11-13",
      "why": "Hearth lists what is in each room; the categories and the fields worth recording should come from a published home-inventory checklist, not guesses. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.",
      "inputs": [],
@@ -108,7 +108,7 @@
     {
      "id": "HEA-GEM-08",
      "title": "How accurate a phone floor plan really is: 12 published measurements",
-     "state": "now",
+     "state": "done",
      "due": "2026-11-14",
      "why": "The layout must become accurate. Claude needs numbers on how close phone scans, phone AR and laser measures get to a tape measure. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.",
      "inputs": [],
@@ -140,7 +140,7 @@
     {
      "id": "HEA-GEM-09",
      "title": "10 floor-plan and 3D formats Hearth could import: what each one carries",
-     "state": "now",
+     "state": "done",
      "due": "2026-11-15",
      "why": "When a room is scanned or drawn, Hearth must read the file into its 3D view without losing walls, doors and real units. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.",
      "inputs": [],
@@ -170,7 +170,7 @@
     {
      "id": "HEA-GEM-10",
      "title": "Laser measures that send readings to an Android phone: 10 models compared",
-     "state": "now",
+     "state": "done",
      "due": "2026-11-16",
      "why": "Joseph's phone is Android (no LiDAR). A Bluetooth laser measure is the realistic path to an accurate plan; Claude needs the real specs. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.",
      "inputs": [],
@@ -201,7 +201,7 @@
     {
      "id": "HEA-GEM-11",
      "title": "10 home inventory and renovation apps taken apart: 50 features Hearth should have",
-     "state": "now",
+     "state": "done",
      "due": "2026-11-17",
      "why": "Hearth should beat the apps people already use for 'what is in my house' and 'what did I do to it'. Hearth's scope (Joseph, 2026-11-05): renovation projects, the assets in every room, and a floor plan that gets accurate over time. Nothing else.",
      "inputs": [],

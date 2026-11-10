@@ -2,6 +2,9 @@
 
 Newest first. Every contributor (Claude and every AI) adds a dated 2-3 line entry after a change.
 
+### [2026-11-09] Sebastian (acting integrator, for Claude): non-Titan homework merge
+- HEA-GEM-01, 02 (#49 schema, 3 rooms verified) and HEA-GEM-07..11 merged from Drive incoming and closed in docs/agents/queues.json; board re-rendered from the hub. Scoring deferred to Claude.
+
 ### [2026-11-05] Claude: Hearth's scope written down (owner: "The point of hearth is to track renovations assets im each room or inventory and a spatial layout thats accurate eventually. So lets keep the scope")
 - Scope = renovation projects, the assets in every room, a floor plan that gets accurate over time (CLAUDE.md, README, hub pillars.json).
 - Gemini: HEA-GEM-03..06 withdrawn (store prices, building code, upkeep calendar, material quantities); HEA-GEM-02 widened to rooms with measured walls + assets + projects; new HEA-GEM-07..11 (inventory categories, scan accuracy evidence, import formats, Android laser measures, inventory/renovation app teardown). Drive doc 'HOMEWORK — Gemini' patched (withdrawn tasks marked, new ones at 49-54).
