@@ -1,0 +1,2292 @@
+[
+ {
+  "n": 1,
+  "category": "refrigerator",
+  "shipped_rooms": [
+   "kitchen",
+   "garage"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Kitchen",
+   "verbatim_item": "Refrigerator"
+  }
+ },
+ {
+  "n": 2,
+  "category": "range and oven",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Kitchen",
+   "verbatim_item": "Stove/Range"
+  }
+ },
+ {
+  "n": 3,
+  "category": "dishwasher",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Kitchen",
+   "verbatim_item": "Dishwasher"
+  }
+ },
+ {
+  "n": 4,
+  "category": "microwave oven",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Kitchen",
+   "verbatim_item": "Microwave oven"
+  }
+ },
+ {
+  "n": 5,
+  "category": "range hood and exhaust fan",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 6,
+  "category": "garbage disposal",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 7,
+  "category": "trash compactor",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 8,
+  "category": "chest or upright freezer",
+  "shipped_rooms": [
+   "kitchen",
+   "laundry",
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Kitchen",
+   "verbatim_item": "Freezer"
+  }
+ },
+ {
+  "n": 9,
+  "category": "ice maker",
+  "shipped_rooms": [
+   "kitchen",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "fix",
+  "issue": "The 'outdoor' room is unsupported. No cited page lists an ice maker outdoors, and a standalone ice maker is a kitchen/bar appliance. III files outdoor appliances under Porch/Patio 'Outdoor cooking equipment'.",
+  "correction": "rooms: ['kitchen']. Log an outdoor-kitchen ice maker under a Porch/Patio 'outdoor cooking equipment' category, not here.",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 10,
+  "category": "water purifier and filtration system",
+  "shipped_rooms": [
+   "kitchen",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 11,
+  "category": "coffee maker and espresso machine",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Kitchen",
+   "verbatim_item": "Coffee makers/other small appliances"
+  }
+ },
+ {
+  "n": 12,
+  "category": "stand mixer and hand mixer",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Kitchen",
+   "verbatim_item": "Mixer/Blender"
+  }
+ },
+ {
+  "n": 13,
+  "category": "blender and food processor",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Kitchen",
+   "verbatim_item": "Mixer/Blender"
+  }
+ },
+ {
+  "n": 14,
+  "category": "toaster and toaster oven",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Kitchen",
+   "verbatim_item": "Coffee makers/other small appliances"
+  }
+ },
+ {
+  "n": 15,
+  "category": "air fryer",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.libertymutual.com",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Kitchen",
+   "verbatim_item": "Coffee makers/other small appliances"
+  }
+ },
+ {
+  "n": 16,
+  "category": "slow cooker and pressure cooker",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.libertymutual.com",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Kitchen",
+   "verbatim_item": "Coffee makers/other small appliances"
+  }
+ },
+ {
+  "n": 17,
+  "category": "pots, pans, and cookware sets",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Kitchen",
+   "verbatim_item": "Pots & Pans"
+  }
+ },
+ {
+  "n": 18,
+  "category": "cutlery, chef knives, and kitchen utensils",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Kitchen",
+   "verbatim_item": "Cutlery/utensils"
+  }
+ },
+ {
+  "n": 19,
+  "category": "everyday dishes, stoneware, and bowls",
+  "shipped_rooms": [
+   "kitchen",
+   "living areas"
+  ],
+  "shipped_source": "www.libertymutual.com",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Kitchen",
+   "verbatim_item": "Dishes"
+  }
+ },
+ {
+  "n": 20,
+  "category": "barstools and kitchen island seating",
+  "shipped_rooms": [
+   "kitchen"
+  ],
+  "shipped_source": "www.libertymutual.com",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 21,
+  "category": "dining table and chairs",
+  "shipped_rooms": [
+   "kitchen",
+   "living areas"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Dining Room",
+   "verbatim_item": "Table Chairs"
+  }
+ },
+ {
+  "n": 22,
+  "category": "buffet and sideboard",
+  "shipped_rooms": [
+   "living areas"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Dining Room",
+   "verbatim_item": "Buffet/Server"
+  }
+ },
+ {
+  "n": 23,
+  "category": "china cabinet and hutch",
+  "shipped_rooms": [
+   "living areas"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Dining Room",
+   "verbatim_item": "China cabinet"
+  }
+ },
+ {
+  "n": 24,
+  "category": "fine china and porcelain dinnerware",
+  "shipped_rooms": [
+   "living areas",
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "'serial' does not apply to china/porcelain. CDI's dining list records 'Service for' (piece count) instead. Drop serial.",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Dining Room",
+   "verbatim_item": "China"
+  }
+ },
+ {
+  "n": 25,
+  "category": "crystal and stemware glassware",
+  "shipped_rooms": [
+   "living areas",
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "'serial' does not apply to crystal/stemware. Drop serial.",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Dining Room",
+   "verbatim_item": "Crystal"
+  }
+ },
+ {
+  "n": 26,
+  "category": "sterling silver and flatware service",
+  "shipped_rooms": [
+   "living areas",
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "Drop 'serial'. CDI's Silverware line asks for 'Specific Brand Name/Model' and 'Service for how many', so keep model.",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Dining Room",
+   "verbatim_item": "Sterling Silver"
+  }
+ },
+ {
+  "n": 27,
+  "category": "tablecloths and formal table linens",
+  "shipped_rooms": [
+   "living areas",
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Dining Room",
+   "verbatim_item": "Table linens"
+  }
+ },
+ {
+  "n": 28,
+  "category": "bar cart and tea cart",
+  "shipped_rooms": [
+   "living areas",
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Dining Room",
+   "verbatim_item": "Serving table/cart"
+  }
+ },
+ {
+  "n": 29,
+  "category": "sofa and sectional couch",
+  "shipped_rooms": [
+   "living areas",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Living Room",
+   "verbatim_item": "Sofa"
+  }
+ },
+ {
+  "n": 30,
+  "category": "recliner and accent chairs",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms"
+  ],
+  "shipped_source": "www.libertymutual.com",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Bedroom No. 2",
+   "verbatim_item": "Recliner"
+  }
+ },
+ {
+  "n": 31,
+  "category": "coffee table",
+  "shipped_rooms": [
+   "living areas",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Living Room",
+   "verbatim_item": "Coffee table"
+  }
+ },
+ {
+  "n": 32,
+  "category": "end tables and side tables",
+  "shipped_rooms": [
+   "living areas"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Living Room",
+   "verbatim_item": "End tables"
+  }
+ },
+ {
+  "n": 33,
+  "category": "entertainment center and media console",
+  "shipped_rooms": [
+   "living areas",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Living Room",
+   "verbatim_item": "Entertainment center/wall units"
+  }
+ },
+ {
+  "n": 34,
+  "category": "bookcases and display shelving",
+  "shipped_rooms": [
+   "living areas",
+   "office",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Household",
+   "verbatim_item": "Bookcases"
+  }
+ },
+ {
+  "n": 35,
+  "category": "television",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "basement",
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Televisions"
+  }
+ },
+ {
+  "n": 36,
+  "category": "stereo receiver, soundbar, and audio speakers",
+  "shipped_rooms": [
+   "living areas",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Stereo equipment"
+  }
+ },
+ {
+  "n": 37,
+  "category": "Blu-ray/DVD player and streaming media players",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "VCR/DVD player"
+  }
+ },
+ {
+  "n": 38,
+  "category": "video game consoles and VR headsets",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "basement"
+  ],
+  "shipped_source": "www.libertymutual.com",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Master Bedroom",
+   "verbatim_item": "Playstation/Xbox/etc."
+  }
+ },
+ {
+  "n": 39,
+  "category": "area rugs and oriental carpets",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Household",
+   "verbatim_item": "Carpet/rugs"
+  }
+ },
+ {
+  "n": 40,
+  "category": "curtains, drapes, and window blinds",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "kitchen",
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Household",
+   "verbatim_item": "Window treatments"
+  }
+ },
+ {
+  "n": 41,
+  "category": "floor lamps and table lamps",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Household",
+   "verbatim_item": "Lamps/light fixtures"
+  }
+ },
+ {
+  "n": 42,
+  "category": "framed artwork, paintings, and wall hangings",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "Artwork has no brand/model/serial. CDI's 'Collectibles, Fine Arts & Antiques' page says to schedule these items 'for their appraised value'. Drop model/serial; add an appraisal field when the schema allows it.",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Household",
+   "verbatim_item": "Pictures/wall hangings"
+  }
+ },
+ {
+  "n": 43,
+  "category": "wall mirrors and floor mirrors",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "bathrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Household",
+   "verbatim_item": "Mirrors"
+  }
+ },
+ {
+  "n": 44,
+  "category": "grandfather clock, mantel clock, and wall clocks",
+  "shipped_rooms": [
+   "living areas",
+   "bedrooms",
+   "kitchen"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Household",
+   "verbatim_item": "Clocks"
+  }
+ },
+ {
+  "n": 45,
+  "category": "fireplace screen, grates, and hearth tools",
+  "shipped_rooms": [
+   "living areas"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Living Room",
+   "verbatim_item": "Fireplace"
+  }
+ },
+ {
+  "n": 46,
+  "category": "musical instruments and pianos",
+  "shipped_rooms": [
+   "living areas",
+   "office",
+   "basement"
+  ],
+  "shipped_source": "www.nationwide.com",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Living Room",
+   "verbatim_item": "Piano/other musical instruments"
+  }
+ },
+ {
+  "n": 47,
+  "category": "bed frame, headboard, and mattress set",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Beds"
+  }
+ },
+ {
+  "n": 48,
+  "category": "dresser and chest of drawers",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Dressers/chests"
+  }
+ },
+ {
+  "n": 49,
+  "category": "nightstands and bedside tables",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Night tables"
+  }
+ },
+ {
+  "n": 50,
+  "category": "wardrobe and armoire",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Master Bedroom",
+   "verbatim_item": "Armoire"
+  }
+ },
+ {
+  "n": 51,
+  "category": "cedar chest and hope chest",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 52,
+  "category": "bedding, sheets, duvets, and blankets",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Bed linens"
+  }
+ },
+ {
+  "n": 53,
+  "category": "clock radio and smart bedside speaker",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Master Bedroom",
+   "verbatim_item": "Clock radio"
+  }
+ },
+ {
+  "n": 54,
+  "category": "jewelry box and watch winder safe",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "fix",
+  "issue": "Two different things in one category: a jewelry box (a furnishing) and a safe. CDI lists 'Safe' as its own line in the Master Bedroom list; neither cited page has a 'jewelry box and watch winder safe' item.",
+  "correction": "Rename #54 to 'jewelry box and watch winder' (rooms: bedrooms). Move safes into #76, renamed 'filing cabinets, document safes and home safes', with rooms office, bedrooms, basement. The count stays 120.",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 55,
+  "category": "fine jewelry, rings, and necklaces",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Jewelry"
+  }
+ },
+ {
+  "n": 56,
+  "category": "wristwatches and luxury timepieces",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Nationwide, Home inventory checklist",
+   "url": "https://www.nationwide.com/lc/resources/home/articles/home-inventory-checklist",
+   "section": "room list",
+   "verbatim_item": "Jewelry and watches"
+  }
+ },
+ {
+  "n": 57,
+  "category": "suits, blazers, and formalwear",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Suits"
+  }
+ },
+ {
+  "n": 58,
+  "category": "dresses and evening gowns",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Dresses"
+  }
+ },
+ {
+  "n": 59,
+  "category": "coats, leather jackets, and winter outerwear",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Coats"
+  }
+ },
+ {
+  "n": 60,
+  "category": "shirts, blouses, and sweaters",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Shirts"
+  }
+ },
+ {
+  "n": 61,
+  "category": "pants, jeans, slacks, and skirts",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Skirts"
+  }
+ },
+ {
+  "n": 62,
+  "category": "shoes, dress footwear, and sneakers",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bedrooms",
+   "verbatim_item": "Shoes"
+  }
+ },
+ {
+  "n": 63,
+  "category": "boots and weather footwear",
+  "shipped_rooms": [
+   "bedrooms",
+   "garage"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Nationwide, Home inventory checklist",
+   "url": "https://www.nationwide.com/lc/resources/home/articles/home-inventory-checklist",
+   "section": "room list",
+   "verbatim_item": "Clothing and shoes"
+  }
+ },
+ {
+  "n": 64,
+  "category": "handbags, purses, and designer totes",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 65,
+  "category": "belts, scarves, ties, hats, and gloves",
+  "shipped_rooms": [
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 66,
+  "category": "luggage, suitcases, and garment bags",
+  "shipped_rooms": [
+   "bedrooms",
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Garage/Basement/Attic/Shed",
+   "verbatim_item": "Luggage/trunks"
+  }
+ },
+ {
+  "n": 67,
+  "category": "bath towels, hand towels, and bath mats",
+  "shipped_rooms": [
+   "bathrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bathrooms",
+   "verbatim_item": "Towels"
+  }
+ },
+ {
+  "n": 68,
+  "category": "hair dryer, curling iron, and styling appliances",
+  "shipped_rooms": [
+   "bathrooms",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bathrooms",
+   "verbatim_item": "Hair dryer/other electrical appliances"
+  }
+ },
+ {
+  "n": 69,
+  "category": "electric razor and electric toothbrush",
+  "shipped_rooms": [
+   "bathrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Master Bathroom",
+   "verbatim_item": "Electric razor"
+  }
+ },
+ {
+  "n": 70,
+  "category": "bathroom scale",
+  "shipped_rooms": [
+   "bathrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bathrooms",
+   "verbatim_item": "Scale"
+  }
+ },
+ {
+  "n": 71,
+  "category": "clothes hamper",
+  "shipped_rooms": [
+   "bathrooms",
+   "bedrooms",
+   "laundry"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Master Bathroom",
+   "verbatim_item": "Hamper"
+  }
+ },
+ {
+  "n": 72,
+  "category": "shower curtain and bath hardware",
+  "shipped_rooms": [
+   "bathrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Bathrooms",
+   "verbatim_item": "Shower curtains"
+  }
+ },
+ {
+  "n": 73,
+  "category": "medicine cabinet contents, cosmetics, and toiletries",
+  "shipped_rooms": [
+   "bathrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 74,
+  "category": "office desk and standing desk",
+  "shipped_rooms": [
+   "office",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Home Office/Study/Den",
+   "verbatim_item": "Desk"
+  }
+ },
+ {
+  "n": 75,
+  "category": "ergonomic office chair",
+  "shipped_rooms": [
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Home Office/Study/Den",
+   "verbatim_item": "Chairs"
+  }
+ },
+ {
+  "n": 76,
+  "category": "filing cabinets and document safes",
+  "shipped_rooms": [
+   "office",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Office/Library/Study",
+   "verbatim_item": "File cabinets"
+  }
+ },
+ {
+  "n": 77,
+  "category": "desktop computer and external monitors",
+  "shipped_rooms": [
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Computer Equipment",
+   "verbatim_item": "Computer tower/CPU"
+  }
+ },
+ {
+  "n": 78,
+  "category": "laptop computer and tablet",
+  "shipped_rooms": [
+   "office",
+   "living areas",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Computer Equipment",
+   "verbatim_item": "Laptop"
+  }
+ },
+ {
+  "n": 79,
+  "category": "printer, scanner, and copier",
+  "shipped_rooms": [
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Home Office/Study/Den",
+   "verbatim_item": "Printer"
+  }
+ },
+ {
+  "n": 80,
+  "category": "paper shredder",
+  "shipped_rooms": [
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 81,
+  "category": "Wi-Fi router, modem, and network switch",
+  "shipped_rooms": [
+   "office",
+   "living areas",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Computer Equipment",
+   "verbatim_item": "External modem"
+  }
+ },
+ {
+  "n": 82,
+  "category": "external hard drives and NAS backup storage",
+  "shipped_rooms": [
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Computer Equipment",
+   "verbatim_item": "External drive"
+  }
+ },
+ {
+  "n": 83,
+  "category": "uninterruptible power supply (UPS) and surge protectors",
+  "shipped_rooms": [
+   "office",
+   "living areas",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Living Room",
+   "verbatim_item": "Power strips"
+  }
+ },
+ {
+  "n": 84,
+  "category": "digital camera, lenses, and photography gear",
+  "shipped_rooms": [
+   "office",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Computer Equipment",
+   "verbatim_item": "Digital camera"
+  }
+ },
+ {
+  "n": 85,
+  "category": "smartphones and mobile communication devices",
+  "shipped_rooms": [
+   "office",
+   "bedrooms",
+   "living areas"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Phones"
+  }
+ },
+ {
+  "n": 86,
+  "category": "books, reference library, and collectible media",
+  "shipped_rooms": [
+   "office",
+   "living areas",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "Books have no brand/model/serial. CDI's Books page records 'Category Series Titles'. Drop brand/model/serial.",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Home Office/Study/Den",
+   "verbatim_item": "Books"
+  }
+ },
+ {
+  "n": 87,
+  "category": "washing machine",
+  "shipped_rooms": [
+   "laundry",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Washer/Dryer"
+  }
+ },
+ {
+  "n": 88,
+  "category": "clothes dryer",
+  "shipped_rooms": [
+   "laundry",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Washer/Dryer"
+  }
+ },
+ {
+  "n": 89,
+  "category": "vacuum cleaner and robotic vacuum",
+  "shipped_rooms": [
+   "laundry",
+   "kitchen",
+   "living areas"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Vacuum cleaner"
+  }
+ },
+ {
+  "n": 90,
+  "category": "clothes iron, garment steamer, and ironing board",
+  "shipped_rooms": [
+   "laundry",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 91,
+  "category": "sewing machine",
+  "shipped_rooms": [
+   "laundry",
+   "bedrooms",
+   "office"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Sewing machine"
+  }
+ },
+ {
+  "n": 92,
+  "category": "power tools (drills, saws, sanders)",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Garage/Workshop",
+   "verbatim_item": "Drills"
+  }
+ },
+ {
+  "n": 93,
+  "category": "hand tools and socket wrench sets",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Garage/Workshop",
+   "verbatim_item": "Tools"
+  }
+ },
+ {
+  "n": 94,
+  "category": "rolling tool chest and workbench",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Garage/Basement/Attic/Shed",
+   "verbatim_item": "Work bench"
+  }
+ },
+ {
+  "n": 95,
+  "category": "air compressor",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Nationwide, Home inventory checklist",
+   "url": "https://www.nationwide.com/lc/resources/home/articles/home-inventory-checklist",
+   "section": "room list",
+   "verbatim_item": "Tools"
+  }
+ },
+ {
+  "n": 96,
+  "category": "wet/dry shop vacuum",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Nationwide, Home inventory checklist",
+   "url": "https://www.nationwide.com/lc/resources/home/articles/home-inventory-checklist",
+   "section": "room list",
+   "verbatim_item": "Tools"
+  }
+ },
+ {
+  "n": 97,
+  "category": "pressure washer",
+  "shipped_rooms": [
+   "garage",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Nationwide, Home inventory checklist",
+   "url": "https://www.nationwide.com/lc/resources/home/articles/home-inventory-checklist",
+   "section": "room list",
+   "verbatim_item": "Tools"
+  }
+ },
+ {
+  "n": 98,
+  "category": "ladders and step stools",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Garage/Basement/Attic/Shed",
+   "verbatim_item": "Ladders"
+  }
+ },
+ {
+  "n": 99,
+  "category": "lawn mower, string trimmer, and edger",
+  "shipped_rooms": [
+   "garage",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Garage/Workshop",
+   "verbatim_item": "Lawn mower"
+  }
+ },
+ {
+  "n": 100,
+  "category": "snow blower",
+  "shipped_rooms": [
+   "garage",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Garage/Basement/Attic/Shed",
+   "verbatim_item": "Snow blower"
+  }
+ },
+ {
+  "n": 101,
+  "category": "bicycles and e-bikes",
+  "shipped_rooms": [
+   "garage",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Garage/Basement/Attic/Shed",
+   "verbatim_item": "Bicycles"
+  }
+ },
+ {
+  "n": 102,
+  "category": "golf clubs, skis, and sporting goods",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Sporting Equipment",
+   "verbatim_item": "Golf clubs"
+  }
+ },
+ {
+  "n": 103,
+  "category": "camping tents, sleeping bags, and fishing gear",
+  "shipped_rooms": [
+   "garage",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Nationwide, Home inventory checklist",
+   "url": "https://www.nationwide.com/lc/resources/home/articles/home-inventory-checklist",
+   "section": "room list",
+   "verbatim_item": "Outdoor gear"
+  }
+ },
+ {
+  "n": 104,
+  "category": "treadmill, stationary bike, and home gym equipment",
+  "shipped_rooms": [
+   "basement",
+   "garage",
+   "bedrooms"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "General Appliances",
+   "verbatim_item": "Exercise equipment"
+  }
+ },
+ {
+  "n": 105,
+  "category": "barbecue grill and outdoor smoker",
+  "shipped_rooms": [
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Outdoor Equipment",
+   "verbatim_item": "BBQ grill"
+  }
+ },
+ {
+  "n": 106,
+  "category": "patio dining set, outdoor loungers, and umbrella",
+  "shipped_rooms": [
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Outdoor Equipment",
+   "verbatim_item": "Patio set"
+  }
+ },
+ {
+  "n": 107,
+  "category": "outdoor fire pit and patio heater",
+  "shipped_rooms": [
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 108,
+  "category": "hot tub and outdoor spa",
+  "shipped_rooms": [
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "Insurance Information Institute, Home inventory brochure",
+   "url": "https://www.iii.org/article/brochure-home-inventory",
+   "section": "Porch/Patio",
+   "verbatim_item": "Jacuzzi"
+  }
+ },
+ {
+  "n": 109,
+  "category": "swimming pool pump, filter, and robotic cleaner",
+  "shipped_rooms": [
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Outdoor Equipment",
+   "verbatim_item": "Pool/Spa equipment"
+  }
+ },
+ {
+  "n": 110,
+  "category": "children's swing set and outdoor play structure",
+  "shipped_rooms": [
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "ok",
+  "issue": "",
+  "correction": "",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Outdoor Equipment",
+   "verbatim_item": "Bench/Swings"
+  }
+ },
+ {
+  "n": 111,
+  "category": "furnace and central heating system",
+  "shipped_rooms": [
+   "house systems",
+   "basement",
+   "garage"
+  ],
+  "shipped_source": "www.iii.org",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": {
+   "source": "FEMA NFIP, What Does Flood Insurance Cover in a Basement? (fact sheet)",
+   "url": "https://www.agents.floodsmart.gov/sites/default/files/media/document/2025-07/fema-nfip-basement-flooding-fact-sheet-01-2022.pdf",
+   "section": "Building Coverage in a Basement",
+   "verbatim_item": "Furnaces and water heaters"
+  }
+ },
+ {
+  "n": 112,
+  "category": "central air conditioner and heat pump",
+  "shipped_rooms": [
+   "house systems",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": {
+   "source": "FEMA NFIP, What Does Flood Insurance Cover in a Basement? (fact sheet)",
+   "url": "https://www.agents.floodsmart.gov/sites/default/files/media/document/2025-07/fema-nfip-basement-flooding-fact-sheet-01-2022.pdf",
+   "section": "Building Coverage in a Basement",
+   "verbatim_item": "Central air conditioners"
+  }
+ },
+ {
+  "n": 113,
+  "category": "water heater (tank or tankless)",
+  "shipped_rooms": [
+   "house systems",
+   "basement",
+   "garage",
+   "laundry"
+  ],
+  "shipped_source": "www.iii.org",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": {
+   "source": "FEMA NFIP, What Does Flood Insurance Cover in a Basement? (fact sheet)",
+   "url": "https://www.agents.floodsmart.gov/sites/default/files/media/document/2025-07/fema-nfip-basement-flooding-fact-sheet-01-2022.pdf",
+   "section": "Building Coverage in a Basement",
+   "verbatim_item": "Furnaces and water heaters"
+  }
+ },
+ {
+  "n": 114,
+  "category": "main electrical panel and subpanels",
+  "shipped_rooms": [
+   "house systems",
+   "basement",
+   "garage"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": {
+   "source": "FEMA NFIP, What Does Flood Insurance Cover in a Basement? (fact sheet)",
+   "url": "https://www.agents.floodsmart.gov/sites/default/files/media/document/2025-07/fema-nfip-basement-flooding-fact-sheet-01-2022.pdf",
+   "section": "Building Coverage in a Basement",
+   "verbatim_item": "Electrical junction and circuit breaker boxes"
+  }
+ },
+ {
+  "n": 115,
+  "category": "sump pump and battery backup pump",
+  "shipped_rooms": [
+   "house systems",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": {
+   "source": "FEMA NFIP, What Does Flood Insurance Cover in a Basement? (fact sheet)",
+   "url": "https://www.agents.floodsmart.gov/sites/default/files/media/document/2025-07/fema-nfip-basement-flooding-fact-sheet-01-2022.pdf",
+   "section": "Building Coverage in a Basement",
+   "verbatim_item": "Sump pumps, heat pumps"
+  }
+ },
+ {
+  "n": 116,
+  "category": "standby or portable backup generator",
+  "shipped_rooms": [
+   "house systems",
+   "garage",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 117,
+  "category": "rooftop solar panels and inverter system",
+  "shipped_rooms": [
+   "house systems",
+   "outdoor",
+   "garage"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 118,
+  "category": "home security alarm and camera system",
+  "shipped_rooms": [
+   "house systems",
+   "living areas",
+   "outdoor"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 119,
+  "category": "automatic garage door opener",
+  "shipped_rooms": [
+   "house systems",
+   "garage"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": null
+ },
+ {
+  "n": 120,
+  "category": "wood stove and fireplace insert",
+  "shipped_rooms": [
+   "house systems",
+   "living areas",
+   "basement"
+  ],
+  "shipped_source": "www.insurance.ca.gov",
+  "shipped_quote_found_on_cited_page": false,
+  "categorization": "advisory",
+  "issue": "Room is right, but this is a building/dwelling component, not contents. CDI handles 'Structure Or Dwelling Coverage' separately from the room lists, and FEMA's fact sheet lists furnaces, water heaters, sump pumps, central AC and breaker boxes under 'Building Coverage'.",
+  "correction": "Keep the category. Add a tag coverage:'dwelling' so Hearth never adds these into contents totals.",
+  "field_note": "",
+  "verified_support": {
+   "source": "California Department of Insurance, Home Inventory Guide (Form 408)",
+   "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Website-Version-Home-Inventory_Revision-September-17th-2.pdf",
+   "section": "Living Room",
+   "verbatim_item": "Fireplace"
+  }
+ }
+]
