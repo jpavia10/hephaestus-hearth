@@ -1,0 +1,86 @@
+{
+ "manifest": "HEARTH-GROK-manifest_20261110-1706",
+ "workstream": "WS-HEARTH (Prometheus one-day reset)",
+ "by": "Grok",
+ "created_utc": "20261110-1706",
+ "drive_folder": "12owi0zaLe3reUHuiqyaVPC3jYR9m2ZUc (Prometheus Hub/Pillars/Hephaestus Hearth/incoming)",
+ "repo": "jpavia10/hephaestus-hearth",
+ "packs": [
+  {
+   "pack": "HEARTH-GROK-checklists_20261110-1702",
+   "files": {
+    "json": "https://drive.google.com/file/d/1uDi-ggpPUeHrDUrHFF8Mt-271FnZ38L2/view",
+    "md": "https://drive.google.com/file/d/1izcMk7jAfw1tyRMVM_tG0PzqRsAeIs4z/view"
+   },
+   "pr": "https://github.com/jpavia10/hephaestus-hearth/pull/2",
+   "branch": "grok/hearth-reset-checklists",
+   "sha": "dc9522b",
+   "readback": {
+    "rows": 124,
+    "unique_ids": 124,
+    "rooms": {
+     "whole house": 9,
+     "kitchen": 18,
+     "bathrooms": 17,
+     "living areas": 12,
+     "bedrooms": 7,
+     "laundry": 8,
+     "garage": 7,
+     "outdoor": 16,
+     "basement": 7,
+     "house systems": 23
+    },
+    "phases": {
+     "0 before work": 9,
+     "1 inspect": 43,
+     "2 decide": 35,
+     "3 rough-in": 30,
+     "4 close-up": 3,
+     "5 final": 4
+    },
+    "distinct_citations": 110,
+    "quotes_machine_verified": 124,
+    "identical_to_local": true
+   },
+   "sources": [
+    "2021 IRC model text via UpCodes (Colorado DFPC adoption) + ICC official chapter links",
+    "InterNACHI SOP https://www.nachi.org/sop.htm",
+    "EPA RRP DIY",
+    "EPA asbestos",
+    "EPA mold guide",
+    "III home inventory brochure"
+   ]
+  },
+  {
+   "pack": "HEARTH-GROK-inventory-verify_20261110-1705",
+   "files": {
+    "json": "https://drive.google.com/file/d/1EFoYCN4Vf9WVQs7Va5TyEDzR4xeXJcDc/view",
+    "md": "https://drive.google.com/file/d/10dfNiu4-oZ3dht01bWf_vU5J4qBYbclY/view"
+   },
+   "pr": "https://github.com/jpavia10/hephaestus-hearth/pull/3",
+   "branch": "grok/hearth-reset-inventory-verify",
+   "sha": "282dc9d",
+   "checked_file": "hearth_gemini_inventory_categories_20261108-2345.json (1noH4BieBes6T3mh0Tn8uR3pxfJOxyUOB)",
+   "readback": {
+    "rows": 120,
+    "categorization": {
+     "ok": 108,
+     "fix": 2,
+     "advisory": 10
+    },
+    "field_notes": 5,
+    "shipped_quotes_found_on_cited_page": 0,
+    "rows_with_verified_support": 102,
+    "identical_to_local": true
+   },
+   "sources": [
+    "CA DOI Home Inventory Guide Form 408 PDF",
+    "III home inventory brochure",
+    "Nationwide home inventory checklist",
+    "FEMA NFIP basement fact sheet",
+    "Liberty Mutual (checked, quote absent)"
+   ]
+  }
+ ],
+ "boundaries": "No owner financial data, no addresses, no prices. Fleet Command untouched. Nothing merged to main; both PRs left for Claude."
+}
