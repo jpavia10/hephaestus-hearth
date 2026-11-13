@@ -1,4 +1,6 @@
 <!-- doc-status: current; normative: yes -->
+> **Moved (2026-11-13).** Hearth now lives inside the hub: `jpavia10/prometheus-hub`, folder `pillars/hearth/`, live at https://jpavia10.github.io/prometheus-hub/pillars/hearth/ (owner: "Hearth doesnt need an independent repo if its gonna stop you from working on it"). Do not work in this repository; its deck progress, data packs and AI queue were carried over. This site is left as it was.
+
 # Hephaestus Hearth: start here (any AI)
 
 The house: renovations, rooms, projects.

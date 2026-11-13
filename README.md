@@ -1,3 +1,5 @@
+> **Moved (2026-11-13).** Hearth now lives inside the hub: `jpavia10/prometheus-hub`, folder `pillars/hearth/`, live at https://jpavia10.github.io/prometheus-hub/pillars/hearth/ (owner: "Hearth doesnt need an independent repo if its gonna stop you from working on it"). Do not work in this repository; its deck progress, data packs and AI queue were carried over. This site is left as it was.
+
 # Hephaestus Hearth
 
 Joseph's house desk: renovation projects, the assets in every room (the inventory), and a floor plan that gets accurate over time. A wing of [Prometheus Hub](https://jpavia10.github.io/prometheus-hub/), in the same cool midnight: thin glass, pearl type, silver-blue dust. No Titan gold, and no vault, fleet, or ledger data.
